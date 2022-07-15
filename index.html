@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/script.js" defer></script>
     <title>Weather App</title>
 </head>
 
@@ -14,7 +14,7 @@
     <div class="heading">
         Weather App
     </div>
-    <form action="#" onsubmit="return false">
+    <form action="#" id="form" onsubmit="return false">
         <div>
             <input type="text" id="search" placeholder="Enter location here...">
             <button type="submit">Search</button>
@@ -23,16 +23,17 @@
     <div class="main">
         <div class="card">
             <div class="card__top">
-                <p>Philippines</p>
-                <p>Friday PH</p>
+                <p id="country"></p>
+                <p id="countryCode"></p>
             </div>
             <div class="card__mid">
                 <div class="card__temp">
-                    <p>85°F</p>
+                    <p id="temp"></p>
+                    <span id="tempType">°C</span>
                 </div>
                 <div class="card__other">
-                    <p>Humidity 73%</p>
-                    <p>Pressure 1009hPa</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Pressure: <span id="pressure"></span>hPa</p>
                 </div>
             </div>
             <div class="card__bottom">

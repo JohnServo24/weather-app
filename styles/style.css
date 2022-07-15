@@ -57,15 +57,16 @@ form button {
   background-color: #E8AA42;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+  font-size: 1.3rem;
+  display: flex;
 }
 .card__top :first-child {
-  font-size: 1.3rem;
   font-weight: bold;
 }
 .card__mid {
   display: flex;
   justify-content: space-around;
-  align-items: centers;
+  align-items: center;
   padding: 2rem 1rem;
 }
 .card__bottom {
@@ -80,8 +81,12 @@ form button {
   width: 2rem;
   accent-color: #1F4690;
 }
+.card__temp {
+  display: flex;
+  align-items: center;
+}
 .card__temp p {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .card__other {
   padding: 0.2rem 0.5rem;

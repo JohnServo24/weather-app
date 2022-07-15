@@ -72,9 +72,11 @@ form {
         background-color: $color-4;
         border-top-right-radius: 5px;
         border-top-left-radius: 5px;
+        font-size: 1.3rem;
+
+        display: flex;
 
         :first-child {
-            font-size: 1.3rem;
             font-weight: bold;
         }
     }
@@ -82,7 +84,7 @@ form {
     &__mid {
         display: flex;
         justify-content: space-around;
-        align-items: centers;
+        align-items: center;
         padding: 2rem 1rem;
     }
 
@@ -101,8 +103,11 @@ form {
     }
 
     &__temp {
+        display: flex;
+        align-items: center;
+
         p {
-            font-size: 4rem;
+            font-size: 3rem;
         }
     }
 
