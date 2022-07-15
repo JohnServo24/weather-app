@@ -34,6 +34,31 @@ const toggleTemp = () => {
     temp.textContent = newTemp;
 }
 
+const createElements = () => {
+    const card = document.createElement('div');
+    const cardTop = document.createElement('div');
+    const cardMid = document.createElement('div');
+    const cardBot = document.createElement('div');
+
+    const country = document.createElement('p');
+    const countryCode = document.createElement('p');
+
+    const cardTemp = document.createElement('div');
+    const cardOther = document.createElement('div');
+
+    const temp = document.createElement('p');
+    const tempType = document.createElement('span');
+
+    const humidity = document.createElement('p');
+    const pressure = document.createElement('p');
+
+    const humidityText = document.createElement('span');
+    const pressureText = document.createElement('span');
+
+    const checkbox = document.createElement('input');
+    const label = document.createElement('label');
+}
+
 const form = document.getElementById('form');
 const search = document.getElementById('search');
 const country = document.getElementById('country');
@@ -43,8 +68,6 @@ const humidity = document.getElementById('humidity');
 const pressure = document.getElementById('pressure');
 const tempType = document.getElementById('tempType');
 const tempCheckbox = document.getElementById('toggleTemp');
-
-console.log(fahrenheitToCelsius(20));
 
 form.addEventListener('submit', e => {
     getWeather(search.value);
