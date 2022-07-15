@@ -1,21 +1,121 @@
+$color-1: #c58618;
+$color-2: #231955;
+$color-3: #1F4690;
+$color-4: #E8AA42;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 .heading {
-    background-color: #E6B325;
+    background-color: $color-4;
     min-height: 7vh;
+
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 form {
-    background-color: #BF9742;
+    background-color: $color-3;
     min-height: 8vh;
+
+    display: grid;
+    place-items: center;
+
+    input {
+        font-size: 1.4rem;
+        width: 30vw;
+
+        border: none;
+        border-bottom: 1px solid $color-4;
+        background-color: $color-3;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        font-size: 1.4rem;
+        border: none;
+        padding: 0.1rem 1rem;
+
+        background-color: $color-4;
+        border-radius: 3px;
+        font-weight: bold;
+
+    }
+
 }
 
 .main {
-    background-color: #A47E3B;
+    background-color: $color-2;
     min-height: 85vh;
+
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background-color: $color-3;
+    border-radius: 5px;
+    width: 350px;
+    margin-top: -20rem;
+
+    &__top {
+        padding: 1rem 1rem 0.5rem 1rem;
+        background-color: $color-4;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+
+        :first-child {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+    }
+
+    &__mid {
+        display: flex;
+        justify-content: space-around;
+        align-items: centers;
+        padding: 2rem 1rem;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: flex-end;
+        background-color: $color-1;
+        padding: 1rem;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+
+        input {
+            width: 2rem;
+            accent-color: $color-3;
+        }
+    }
+
+    &__temp {
+        p {
+            font-size: 4rem;
+        }
+    }
+
+    &__other {
+        background-color: $color-1;
+        padding: 0.2rem 0.5rem;
+        border-radius: 5px;
+        font-size: 1.1rem;
+
+        p {
+            line-height: 2;
+        }
+    }
+
+
 }
