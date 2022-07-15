@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+  background-color: #E6B325;
+  min-height: 7vh;
+}
+
+form {
+  background-color: #BF9742;
+  min-height: 8vh;
+}
+
+.main {
+  background-color: #A47E3B;
+  min-height: 85vh;
+}/*# sourceMappingURL=style.css.map */
