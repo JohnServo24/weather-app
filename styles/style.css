@@ -71,7 +71,7 @@ form button {
 .card__bottom {
   display: flex;
   justify-content: flex-end;
-  background-color: #c58618;
+  border-top: 2px solid #E8AA42;
   padding: 1rem;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -84,9 +84,8 @@ form button {
   font-size: 4rem;
 }
 .card__other {
-  background-color: #c58618;
   padding: 0.2rem 0.5rem;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 1.1rem;
 }
 .card__other p {
