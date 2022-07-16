@@ -51,6 +51,7 @@ form button {
   border-radius: 5px;
   width: 350px;
   margin-top: -20rem;
+  display: none;
 }
 .card__top {
   padding: 1rem 1rem 0.5rem 1rem;
@@ -95,4 +96,7 @@ form button {
 }
 .card__other p {
   line-height: 2;
+}
+.card-visible {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
